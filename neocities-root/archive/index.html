@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vergundy's Website</title>
+    <link href="archive.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
+</head>
+<body>
+<div class="top-bar">
+    <h1>ARCHIVE</h1>
+    <h3>Click images for full res</h3>
+</div>
+
+<div class="archive-menu">
+    <div class="year-label-box">
+        <div class="year-label-num-cell">
+            <h2>2020</h2>
+        </div>
+        <div class="year-label-button-cell">
+            <input id="2020-expand" data-down="false" type="image" src="/images/triangle_button.png">
+        </div>
+    </div>
+
+    <div id="2020-list" class="archive-flex-box"></div>
+
+    <div class="year-label-box">
+        <div class="year-label-num-cell">
+            <h2>2021</h2>
+        </div>
+        <div class="year-label-button-cell">
+            <input id="2021-expand" data-down="false" type="image" src="/images/triangle_button.png">
+        </div>
+    </div>
+
+    <div id="2021-list" class="archive-flex-box"></div>
+
+    <div class="year-label-box">
+        <div class="year-label-num-cell">
+            <h2>2022</h2>
+        </div>
+        <div class="year-label-button-cell">
+            <input id="2022-expand" data-down="false" type="image" src="/images/triangle_button.png">
+        </div>
+    </div>
+
+    <div id="2022-list" class="archive-flex-box"></div>
+
+    <div class="year-label-box">
+        <div class="year-label-num-cell">
+            <h2>2023</h2>
+        </div>
+        <div class="year-label-button-cell">
+            <input id="2023-expand" data-down="false" type="image" src="/images/triangle_button.png">
+        </div>
+    </div>
+
+    <div id="2023-list" class="archive-flex-box"></div>
+</div>
+
+<template id="archive-work">
+    <div class="archive-grid-item">
+        <a href='#'>
+            <div class="archive-grid-item-img-container">
+                <img id="preview" src='#'>
+            </div>
+        </a>
+        <div class="archive-grid-item-text-container">
+            <span id="title" class="work-title"></span><span id="date"></span>
+            <p id="media"></p>
+        </div>
+    </div>
+</template>
+
+<script src="archive.js"></script>
+</body>
+</html>
